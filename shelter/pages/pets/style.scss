@@ -1,0 +1,128 @@
+@import url(../../pages/main/style.css);
+
+@font-face {
+    font-family: Georgia;
+    src: url(../../assets/fonts/georgia/georgia-regular.ttf), url(../../assets/fonts/georgia/georgia-bold.ttf);
+}
+@font-face {
+    font-family: Arial;
+    src: url(../../assets/fonts/arial/arial-regular.ttf), url(../../assets/fonts/arial/arial-italic.ttf);
+}
+$font-main: Georgia, serif;
+$font-sub: Arial, sans-serif;
+
+$color-light-xl: #FFFFFF;
+$color-light-l: #F6F6F6;
+$color-light-s: #FAFAFA;
+$color-dark-s: #CDCDCD;
+$color-dark-m: #B2B2B2;
+$color-dark-l: #545454;
+$color-dark-xl: #4C4C4C;
+$color-dark-2xl: #444444;
+$color-dark-3xl: #292929;
+
+$color-primary: #F1CDB3;
+$color-primary-light: #FDDCC4;
+
+.pets__header{
+    background-color: $color-light-xl;
+}
+.logo__title_pets {
+    color: $color-dark-l;
+}
+.logo__sub_pets {
+    color: $color-dark-l;
+}
+.navi_pets{
+    color: $color-dark-l;
+}
+
+.pets__header{
+    .container{
+        padding: 30px 0px 30px;
+    }
+    header{
+        margin: 0;
+    }
+    z-index: 5;
+    position: sticky;
+    top:0;
+}
+.logo {
+    a{
+        text-decoration: none;
+        color: $color-dark-l;
+    }
+}
+.logo__title_pets {
+    color: $color-dark-l;
+
+}
+.logo__sub_pets {
+    color: $color-dark-l;
+}
+.navi-list{
+    background-color: #FFFFFF;
+}
+.navi{
+    .navi_pets{
+        color: $color-dark-l;
+
+        &.nohover{
+            color: $color-dark-l;
+        }
+        &.whover:hover{
+            color: $color-dark-3xl;
+        }
+    }
+}
+
+
+.ourpets_background{
+    background-color: $color-light-l;
+}
+
+.ourpets__content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 45px;
+}
+
+.ourpets__cardscontainer{
+    padding: 15px 0px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    row-gap: 30px;
+}
+
+.slider__animation{
+    animation: opacity_incr 0.5s ease;
+}
+
+.ourpets__navigation{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.button_inactive{
+    border-color: $color-dark-s;
+    h4{
+        color: $color-dark-s;
+    }
+    &:hover{
+        cursor: auto;
+    }
+}
+.button_currentpage{
+    border-color: $color-primary;
+    background-color: $color-primary;
+    &:hover{
+        cursor: auto;
+    }
+}
+
+@import 'tablet';
+@import 'mobile';

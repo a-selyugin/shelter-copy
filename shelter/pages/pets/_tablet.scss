@@ -1,0 +1,38 @@
+@media screen and (max-width:1279px){
+
+    .pets__header{
+        .container{
+            padding: 30px;
+        }
+    }
+    .ourpets__content{
+        row-gap: 30px;
+    }
+    .container{
+        padding-bottom: 76px;
+    }
+    .ourpets__cardscontainer{
+        padding: 0;
+        width: 580px; // this may be deleted for more breakpoints
+    }
+    
+    .ourpets__navigation{
+        margin-top: 10px;
+    }
+    .slider__card:nth-child(7){
+        display: none;
+    }
+    .slider__card:nth-child(8){
+        display: none;
+    }
+}
+/*
+@media screen and (max-width:1259px){
+    .slider__card:nth-child(7){
+        display: none;
+    }
+    .slider__card:nth-child(8){
+        display: none;
+    }
+}
+*/
